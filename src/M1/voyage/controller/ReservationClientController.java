@@ -100,16 +100,19 @@ public class ReservationClientController extends BaseController {
         return new ModelAndView("redirect:/" + "reservationClient");
     }
 
-    @RequestMapping(value="/updateReservationClient",method = RequestMethod.POST)
+    @RequestMapping(value="/updateReservation",method = RequestMethod.POST)
     public ModelAndView updateReservationClient(
-            @ModelAttribute("reservation") Reservation reservation,
+            @RequestParam(value="id") String id,
+            @RequestParam(value="id_chambre") String id_chambre,
+            @RequestParam(value="id_client") String id_client,
+            @RequestParam(value="date_debut") String date_debut,
+            @RequestParam(value="date_fin") String date_fin,
             HttpSession session) throws Exception{
 
         if(authService.checkSession(session)){
             try{
-//                Reservation reservation = new Reservation(Date.valueOf(date_debut), Date.valueOf(date_fin), Integer.parseInt(id_chambre),Integer.parseInt(id_client));
+                Reservation reservation = new Reservation(Integer.parseInt(id),Date.valueOf(date_debut), Date.valueOf(date_fin), Integer.parseInt(id_chambre),Integer.parseInt(id_client));
                 baseService.update(reservation);
-                return new ModelAndView("redirect:/" + "");
             }catch (Exception ex){
                 ex.printStackTrace();
                 return new ModelAndView("redirect:/" + "reservationClient");

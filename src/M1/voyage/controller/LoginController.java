@@ -28,7 +28,6 @@ public class LoginController extends BaseController {
 
     @RequestMapping(value="/login", method = RequestMethod.POST)
     public ModelAndView loginService(
-            @RequestParam(value="red", required=false) String url,
             @ModelAttribute("client") Client client,
             HttpSession session) throws Exception {
 

@@ -15,11 +15,9 @@ public class Reservation extends BaseModel
 {
 
 	@Column(name = "date_debut")
-	@DateTimeFormat(pattern = "MM/dd/yyyy")
 	private Date date_debut;
 
 	@Column(name = "date_fin")
-	@DateTimeFormat(pattern = "MM/dd/yyyy")
 	private Date date_fin;
 
 	@Column(name = "id_chambre")

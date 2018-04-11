@@ -54,21 +54,21 @@
 			<div class="ui huge message">
 				<div class="ui form">
 					<h1>Reservation de la chambre ${chambre.nom_chambre}</h1>
-					<form:form action="/updateReservationClient" method="post" id="modal" class="ui form" modelAttribute="reservation">
+					<form:form action="/updateReservation" method="POST" id="modal" class="ui form" modelAttribute="reservation">
 						<div class="field">
 							<label>Date Debut</label>
 							<form:hidden path="id" required="true"/>
 							<form:hidden path="id_chambre" required="true"/>
 							<form:hidden path="id_client" required="true"/>
 							<div class="ui left icon input">
-								<form:input path="date_debut" type="date" required="true"/>
+								<input name="date_debut" type="date" required="true" value="${reservation.date_debut}"/>
 								<i class="icon calendar"></i>
 							</div>
 						</div>
 						<div class="field">
 							<label>Date Fin</label>
 							<div class="ui left icon input">
-								<form:input path="date_fin" type="date" required="true"/>
+								<input name="date_fin" type="date" required="true"  value="${reservation.date_fin}"/>
 								<i class="icon calendar"></i>
 							</div>
 
