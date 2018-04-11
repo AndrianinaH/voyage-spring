@@ -1,0 +1,162 @@
+/*------------------- Logo ---------------------*/
+.icon.marker{
+	margin-left:-9px !important;
+	margin-right:-9px !important;
+	margin-top:-12px !important;
+}
+.icon.world{
+	margin:-2px !important;
+}
+#logo_bleu
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#007FAD;
+}
+#logo_jaune
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#F09630;
+}
+#logo_rouge
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#D83337;
+	margin-left: 10px;
+}
+/*------------------- Header ---------------------*/
+.ui.menu .active{
+	background-color: #FFF !important;
+}
+/*------------------- footer ---------------------*/
+footer
+{
+  background-color:  #0b3148;
+  border-top: 6px solid #3f6c88;
+}
+#titre_footer
+{
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  color: #FFF;
+  font-family: Helvetica,Sans,sans-serif,Sans Serif;
+}
+#copyright
+{
+  text-align: center;
+  padding-bottom:20px;
+  color: #FFF;
+  font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+}
+#copyright>p
+{
+  margin-top: 10px;
+}
+/*---------------- Bar de recherche --------------*/
+#search_bar{
+	width: 100%;
+    background-color: #37454D;
+    margin-top: -14px;
+    padding-top: 20px;
+}
+#search_bar .ui.form{
+	width: 60%;
+	margin: auto;
+}
+.ui.form .inline.field>.selection.dropdown, .ui.form .inline.fields .field>.selection.dropdown {
+   width: 100%;
+   font-weight: 700;
+   padding-top: 13px;
+   padding-bottom: 13px;
+}
+.ui.selection.dropdown {
+	min-height: 100%;
+	color: #37454D;
+}
+#my_input{
+	margin-bottom: 20px;
+}
+#date ::-webkit-input-placeholder 
+{
+   color: #37454D !important;
+}
+#date :-moz-placeholder 
+{ /* Firefox 18- */
+   color: #37454D !important;  
+}
+#date ::-moz-placeholder 
+{  /* Firefox 19+ */
+   color: #37454D !important;  
+}
+.ui.large.input {
+    font-weight: 600;
+}
+#blanc{
+	color: #FFF !important;
+	font-weight: 600 !important;
+	font-size: 15px;
+}
+/*------------------- filtre ------------------------------*/
+.ui.toggle.checkbox input:checked~.box:before{
+    background-color: #fbbd08!important;
+}
+#menu_filtre{
+	margin-left:20px;
+}
+/*------------------- list hotel --------------------------*/
+.list_hotel{
+	padding-top:20px !important;
+}
+/*------------------- pagination --------------------------*/
+.ui.pagination.menu{
+	margin:auto !important;
+	margin-bottom:30px !important;
+	padding-left:0em !important;
+	padding-right:0em !important;
+}
+.ui.pagination.menu .item{
+	min-width:1.2em !important;
+	font-weight: bold;
+    color: #37454d;
+}
+.ui.pagination.menu .item:hover,.ui.pagination.menu .active.item{
+	    background: #3d6f94 !important;
+	    color:#FFF !important;
+}
+/*------------------- detail hotel ------------ -----------*/
+#detailHotel h1{
+	margin-top:10px;
+	font-size:23px;
+	color:#3d6f94;
+}
+/*------------------- modal ------------ -----------*/
+.ui.huge.message {
+    background-color:#FFF !important;
+    box-shadow: 0 0 0 1px rgba(237, 239, 241, 0.22) inset, 0 0 0 0 rgba(0, 0, 0, 0.01) !important;
+}
+/*------------------- detail hotel ------------ -----------*/
+#_bleu
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	color:#007FAD;
+}
+#_jaune
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	color:#F09630;
+}
+#nom_hotel
+{
+  font-size: 22px;
+  font-weight: bold;
+  font-family: comic sans ms;
+  color:#ce4848;
+}

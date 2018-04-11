@@ -1,0 +1,93 @@
+body{
+	background-color:#334558;
+}
+p,a{
+	color:#FFF !important;
+}
+#logo{
+  background-color: #FFF;
+  padding:15px 5px;
+  text-align:center;
+}
+/*------------------- Logo ---------------------*/
+#logo_bleu
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#007FAD;
+}
+.icon.marker{
+	margin-left:-9px !important;
+	margin-right:-9px !important;
+	margin-top:-12px !important;
+}
+.icon.world{
+	margin:-2px !important;
+}
+#logo_jaune
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#F09630;
+}
+#logo_rouge
+{
+	font-family: Arial,Helvetica,Sans,sans-serif,Sans Serif;
+	font-size: 20px;
+	font-weight: bold;
+	color:#D83337;
+	margin-left: 10px;
+}
+/*--------------- login ------------*/
+.infoSup{
+  text-align: center;
+  margin-top: 10px;
+  color:#FFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+#login2>form>.two.fields>.field>input{
+  width: 95% !important;
+}
+#login2>form>.field>input,#login2>form>.accordion.field>.content.field>input{
+  width: 97% !important;
+}
+#login2{
+  background-color: #0b3148;
+  border-radius:15px; 
+  margin: 3% auto;
+  max-width: 500px;
+  border: 3px solid #0b3148;
+}
+#login2>form{
+  
+  text-align: center;
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#login2>h1{
+  color: #0b3148;
+  background-color: #FFF;
+  font-family: Helvetica,Arial,sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-radius: 14px 14px 0px 0px;
+  margin-left: 0px;
+  font-size:20px !important;
+}
+#login2>a,#login>p{
+  color: #FFF;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.ui.form input{
+  padding-right: 0px !important;
+}

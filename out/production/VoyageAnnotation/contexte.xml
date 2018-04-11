@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+  xmlns:util="http://www.springframework.org/schema/util"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/jdbc
+    http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+    http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+     http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="M1.voyage.dao" />
+    <context:component-scan base-package="M1.voyage.services" />
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource2" />
+        <property name="packagesToScan" value="M1.voyage.models"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernateDao.dialect">org.hibernateDao.dialect.PostgreSQL82Dialect</prop>
+                <prop key="hibernateDao.current_session_context_class">thread</prop>
+                <prop key="hibernateDao.show_sql">true</prop>
+                <prop key="hibernateDao.format_sql">true</prop>
+            </props>
+        </property>
+    </bean>	 
+    
+    <bean id="dataSource2" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost:5432/voyage" />
+        <property name="username" value="postgres" />
+        <property name="password" value="root" />
+    </bean>
+</beans>

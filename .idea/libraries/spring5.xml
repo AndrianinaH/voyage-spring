@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="spring5">
+    <CLASSES>
+      <root url="file://F:/Logiciel utile/Java/spring5" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://F:/Logiciel utile/Java/spring5" />
+    </SOURCES>
+    <jarDirectory url="file://F:/Logiciel utile/Java/spring5" recursive="false" />
+    <jarDirectory url="file://F:/Logiciel utile/Java/spring5" recursive="false" type="SOURCES" />
+  </library>
+</component>
